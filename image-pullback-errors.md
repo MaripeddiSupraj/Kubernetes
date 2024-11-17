@@ -2,25 +2,25 @@
 
 When deploying applications on Kubernetes, one of the common issues you might encounter is an Image Pull Back Error. This error prevents your pods from running and can be a source of frustration if not properly understood. This guide aims to explain what image pull back errors are, why they occur, and how to resolve them with clear examples and solutions.
 ### Table of Contents
-- What is an Image Pull Back Error?
-- Common Causes
-  - Incorrect Image Name or Tag
-  - Authentication Issues with Private Registries
-  - Network Connectivity Problems
-  - Image Pull Policy Misconfiguration
-- Diagnosing the Error
-  - Using kubectl get pods
-  - Describing the Pod
-- Solutions
-  - Verify Image Name and Tag
-  - Set Up Image Pull Secrets
-  - Check Network Connectivity
-  - Adjust Image Pull Policy
-- Examples
-  - Example 1: Incorrect Image Tag
-  - Example 2: Missing Image Pull Secret
-- Conclusion
-
+- [Understanding Image Pull Back Errors in Kubernetes](#understanding-image-pull-back-errors-in-kubernetes)
+- [What is an Image Pull Back Error?](#what-is-an-image-pull-back-error)
+- [Common Causes](#common-causes)
+  - [Incorrect Image Name or Tag](#incorrect-image-name-or-tag)
+  - [Authentication Issues with Private Registries](#authentication-issues-with-private-registries)
+  - [Network Connectivity Problems](#network-connectivity-problems)
+  - [Image Pull Policy Misconfiguration](#image-pull-policy-misconfiguration)
+- [Diagnosing the Error](#diagnosing-the-error)
+  - [Using `kubectl get pods`](#using-kubectl-get-pods)
+  - [Describing the Pod](#describing-the-pod)
+- [Solutions](#solutions)
+  - [Verify Image Name and Tag](#verify-image-name-and-tag)
+  - [Set Up Image Pull Secrets](#set-up-image-pull-secrets)
+  - [Check Network Connectivity](#check-network-connectivity)
+  - [Adjust Image Pull Policy](#adjust-image-pull-policy)
+- [Examples](#examples)
+  - [Example 1: Incorrect Image Tag](#example-1-incorrect-image-tag)
+  - [Example 2: Missing Image Pull Secret](#example-2-missing-image-pull-secret)
+- [Conclusion](#conclusion)
   
 
 
