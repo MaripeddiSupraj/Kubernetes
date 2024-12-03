@@ -1,4 +1,13 @@
 ## Migrating from Karpenter to EKS Auto Mode
+
+
+---
+
+### **What is EKS Auto Mode?**
+
+Amazon EKS Auto Mode automates Kubernetes cluster management on AWS with a single click. It handles infrastructure provisioning, instance selection, resource scaling, cost optimization, OS patching, and security integration. This reduces the need for deep Kubernetes expertise and ongoing management, enabling you to focus on building innovative applications while AWS manages scalability and performance.
+
+### Purpose
 This guide provides a step-by-step process for migrating your workloads from Karpenter to Amazon EKS Auto Mode using `kubectl`. You can carry out the migration gradually, moving workloads at your own pace while maintaining cluster stability and application availability throughout the transition.
 
 The approach outlined below allows you to run Karpenter and EKS Auto Mode simultaneously during the migration period. This dual-operation strategy helps ensure a seamless transition by enabling you to validate how your workloads behave on EKS Auto Mode before completely phasing out Karpenter. You have the flexibility to migrate applications individually or in batches, accommodating your specific operational needs and risk tolerance.
